@@ -1,10 +1,10 @@
 ---
- - name: apache play
-   host: all
-   become: yes #become command is used as sudo 
-   tasks:
-     - name: update ubuntu packages and install apache2
-       apt:
+- name: apache play
+  hosts: all
+  become: yes
+  tasks:
+    - name: update ubuntu packages and install apache
+      apt:
         name: apache2
-        update_cache: yes #update_cache command for sudo apt update
+        update_cache: yes
         state: present
