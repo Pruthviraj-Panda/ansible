@@ -7,6 +7,7 @@ localhost
 
 [appserver]
 172.31.17.214
+172.31.45.11
 
 [dbserver]
 172.31.45.11
