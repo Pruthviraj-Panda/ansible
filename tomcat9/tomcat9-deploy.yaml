@@ -1,0 +1,6 @@
+---
+- name: Installing tomcat9
+  hosts: all 
+  become: yes
+  
+
