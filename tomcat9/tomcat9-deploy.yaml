@@ -61,13 +61,13 @@
         - reload daemon
     - name: enable and start tomcat service
       service: 
-        name: tomcat.service
+        name: tomcat.service.j2
         enabled: yes
         state: started
   handlers:
     - name: reload daemon
       systemd:
-        name: tomcat.service
+        name: tomcat.service.j2
         daemon_reload: yes
         state: started      
 
